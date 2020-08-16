@@ -20,7 +20,8 @@ body {
     padding: 20px;
 }
 
-form {
+form,
+.content {
     width: 30%;
     margin: 0px auto;
     padding: 20px;
@@ -51,4 +52,15 @@ form {
     background: #5F9EA0;
     border: none;
     border-radius: 5px;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Php login system</title>
+        <title>Php register system</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
@@ -11,13 +11,14 @@
         </div>
 
     <form method="post" action="register.php">
+        <?php include('errors.php');?>
         <div class="input-group">
             <label>Nome</label>
-            <input type="text" name="username">
+            <input type="text" name="username" value="<?php echo $username; ?>">
         </div>
         <div class="input-group">
             <label>E-mail</label>
-            <input type="text" name="email">
+            <input type="text" name="email" value="<?php echo $email; ?>">
         </div>
         <div class="input-group">
             <label>Senha</label>
@@ -34,6 +35,6 @@
             Já possui uma conta? <a href="login.php">Entrar</a>
         </p>
     </form>
-        
+
     </body>
 </html>
