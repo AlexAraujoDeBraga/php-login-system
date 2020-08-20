@@ -39,4 +39,37 @@
         }
     }
 
+    // login user
+    if(isset($_POST['login'])){
+        $username = mysqli_real_escape_string($db, $_POST['username']);
+        $password = mysqli_real_escape_string($db, $_POST['password']); 
+
+        // obrigar que os campos sejam preenchidos
+        if(empty($username)){
+            array_push($errors, "Preencha seu nome");
+        }
+        if(empty($password)){
+            array_push($errors, "Preencha sua senha");
+        }
+        if(count($errors) == 0){
+            $password = md5($password); // encriptando senha para comparar com a do database
+            $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+            $result = mysqli_query($db, $query);
+            if(mysqli_num_rows($result) == 1){
+                $_SESSION['username'] = $username;
+                $_SESSION['success'] = "Você agora está logado";
+                header('location: index.php');
+            } else{
+                array_push($errors, "Usuário ou Senha incorretos.");
+            }
+        }
+    }
+
+    //logout
+    if(isset($_GET['logout'])){
+        session_destroy();
+        unset($_SESSION['username']);
+        header('location: login.php');
+    }
+
 ?>
