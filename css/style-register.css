@@ -10,6 +10,7 @@
     --Patua: "Patua One", cursive;
     --Lobster: "Lobster", cursive;
     --bggradient: linear-gradient(to bottom, #ff8c00, #ffaf4d);
+    --bgimage: url("img/music.jpg");
 }
 
 body {
@@ -20,9 +21,11 @@ body {
     background-repeat: no-repeat;
 }
 
-.container {
-    position: relative;
-    left: 35%;
+h3 {
+    color: white;
+    font-family: var(--Lobster);
+    margin-left: 20px;
+    padding-top: 10px;
 }
 
 .header {
@@ -103,7 +106,26 @@ form,
     text-align: left;
 }
 
+.flex-container {
+    display: flex;
+}
+
+.bottom-icon {
+    text-align: center;
+    margin: 25px;
+    color: white;
+    font-weight: bold;
+}
+
 .footer {
     margin: 30px 0px 0px;
-    background: olive;
+    background: #4F4F4F;
+    padding: 10px;
+    font-size: var(--Rubik);
+}
+
+.footer p {
+    font-size: 18px;
+    font-family: var(--Patua);
+    color: white;
 }

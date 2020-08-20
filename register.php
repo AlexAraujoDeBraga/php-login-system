@@ -12,6 +12,7 @@
     </head>
     <body>
     <header>
+        <h3>Login</h3>
     <div class="container col-6 col-md-12">        
         <div class="header">
             <h2>Criar um conta</h2>
@@ -40,6 +41,16 @@
         </form>
     </div>
     </header>
+    <div class="flex-container">
+        <div class="bottom-icon">
+            <i class="fab fa-facebook fa-3x text-white"></i>
+            <p>Facebook</p>
+        </div>
+        <div class="bottom-icon">
+            <i class="fab fa-google-plus fa-3x text-white"></i>
+            <p>Google Plus</p>
+        </div>
+    </div>
     <footer>
         <div class="footer">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
