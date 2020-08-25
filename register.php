@@ -12,10 +12,10 @@
     </head>
     <body>
     <header>
-        <h3>Login</h3>
+        <h3>Register</h3>
     <div class="container col-6 col-md-12">        
         <div class="header">
-            <h2>Criar um conta</h2>
+            <h2>Criar uma conta</h2>
         </div>
 
         <form method="post" action="register.php">
@@ -32,8 +32,10 @@
             <div class="input-group">
                 <input type="password" placeholder="Confirmar Senha" name="password_2">
             </div>
-            <div class="input-group">
-                <button type="submit" name="register" class="btn">Registrar-se</button>
+            <div class="row justify-content-center">
+                <div class="input-button">
+                    <button type="submit" name="register" class="btn">Registrar-se</button>
+                </div>
             </div>
             <p>
                 Já possui uma conta? <a href="login.php">Entrar</a>
@@ -41,14 +43,20 @@
         </form>
     </div>
     </header>
-    <div class="flex-container">
-        <div class="bottom-icon">
-            <i class="fab fa-facebook fa-3x text-white"></i>
-            <p>Facebook</p>
-        </div>
-        <div class="bottom-icon">
-            <i class="fab fa-google-plus fa-3x text-white"></i>
-            <p>Google Plus</p>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="bottom-icon col-lg-1 col-md-4 col-sm-4 col-10">
+                <i class="fab fa-facebook fa-3x"></i>
+                <p>Facebook</p>
+            </div>
+            <div class="bottom-icon col-lg-1 col-md-4 col-sm-4 col-10">
+                <i class="fab fa-google-plus fa-3x"></i>
+                <p>Google Plus</p>
+            </div>
+            <div class="bottom-icon col-lg-1 col-md-4 col-sm-4 col-10">
+                <i class="fab fa-instagram-square fa-3x"></i>
+                <p>Instagram</p>
+            </div>
         </div>
     </div>
     <footer>
