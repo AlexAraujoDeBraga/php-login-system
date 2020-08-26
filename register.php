@@ -60,8 +60,36 @@
         </div>
     </div>
     <footer>
-        <div class="footer">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container-fluid footer">
+            <div class="row text-left">
+                <div class="col-md-5">
+                    <h2 class="text-light pt-4">
+                        Sobre Nós
+                    </h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="pt-4 text-muted">Copyright &copy2020 Todos os Diretos Reservados | Esse template </br> foi obra de
+                        <span class="text-warning">Alex Dev</span></p>
+                </div>
+                <div class="col-md-5">
+                    <p class="pt-4 text-light">Fale-Conosco</p>
+                    <div class="column">
+                        <i class="fab fa-whatsapp text-warning"><span class="text-light">  (21) 91111-1111</span></i>
+                        <br>
+                        <i class="fas fa-envelope text-warning"><span class="text-light">  phpregister@mail.com</span></i>
+                        <br>
+                        <i class="fas fa-phone text-warning"><span class="text-light">  (21) 2222-2222</span></i>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="pt-4 text-light">Siga-Nos</p>
+                    <div class="column">
+                        <i class="fab fa-facebook-f text-warning"></i>
+                        <i class="fab fa-instagram text-warning"></i>
+                        <i class="fab fa-twitter text-warning"></i>
+                        <i class="fab fa-youtube text-warning"></i>
+                    </div>
+                </div>
+            </div>
         </div> 
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
